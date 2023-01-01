@@ -1,20 +1,12 @@
 import React from "react";
 import "./App.css";
-import BookList from "./components/BookList";
-import Navbar from "./components/Navbar";
-import ThemeToggle from "./components/ThemeToggle";
-import ThemeContextProvider, { ThemeContext } from "./context/ThemeContext";
-
+import Car from "./props/Car";
 function App() {
-  return (
-    <div className="App">
-      <ThemeContextProvider>
-        <BookList />
-        <Navbar />
-        <ThemeToggle/>
-      </ThemeContextProvider>
-    </div>
-  );
+  return <div className="App">
+  
+  <Car/>
+  
+  </div>;
 }
 
 export default App;
